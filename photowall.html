@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60"><!--refresh per 60 seconds-->
+     <link rel="icon" href="./favicon.ico">
+    <title>照片墙</title>
+    <link href="https://cdn.jsdelivr.net/gh/cx99lyc/star@1.3/css/photowall/style_PhotoWall.css" rel="stylesheet" type="text/css"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cx99lyc/star@1.3/css/love/lovexhj.css"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+</head>
+<body onload="variableImage()">
+    <script type="text/javascript">
+        function variableImage(){
+            for(var i = 0;i<12;i++){
+                var NowFrame=parseInt(Math.random()*16);
+                document.getElementById("showImage"+i).src="https://cdn.jsdelivr.net/gh/cx99lyc/star@1.3/images/photowall/"+NowFrame+".jpg";
+            }
+        }
+    </script>
+    <header class="header default">
+               <div class=" left-part">
+                  <a class="logo scroll" href="index.html">
+                     <h2>LOVE</h2>
+                  </a>
+               </div>
+               <div class="right-part">
+                  
+                     <ul> 
+                        <li><a class="scroll" href="tree.html">爱情树</a></li>
+                        <li><a class="scroll" href="#">爱的相册</a></li>
+                        <li><a class="scroll" href="firework.html">新年烟花</a></li>
+                     </ul>
+                  
+               </div>
+            </header>
+    <div>
+
+        <img id="showImage0" width="384" height="216"/>
+        <img id="showImage1" width="576" height="324"/>
+        <img id="showImage2" width="384" height="216"/>
+        <img id="showImage3" width="384" height="216"/>
+        <img id="showImage4" width="576" height="324"/>
+        <img id="showImage5" width="384" height="216"/>
+        <img id="showImage6" width="864" height="486"/>
+        <img id="showImage7" width="576" height="324"/>
+        <img id="showImage8" width="672" height="378"/>
+        <img id="showImage9" width="384" height="216"/>
+        <img id="showImage10" width="576" height="324"/>
+         <img id="showImage11" width="576" height="324"/>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+</body>
+</html>
